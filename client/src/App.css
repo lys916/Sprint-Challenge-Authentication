@@ -4,7 +4,8 @@
 /* Jokes Component*/
 .jokes .joke {
   border: 1px solid gray;
-  margin: 10px 0px;
+  margin: 10px auto;
+  width: 600px;
 }
 
 .joke .setup {

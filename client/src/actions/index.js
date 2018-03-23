@@ -5,13 +5,10 @@ export const LOGGED_OUT = 'LOGGED_OUT';
 export const FETCHED_JOKES = 'FETCHED_JOKES';
 
 export const fetchJokes = () => {
-  console.log('fetching jokes');
   return (dispatch) => {
       const token = localStorage.getItem('token');
-      console.log(token);
       axios.get('http://localhost:5000/api/jokes', {headers : {Authorization: token}})
       .then(res => {
-        console.log(res);
         dispatch({
           type: FETCHED_JOKES,
           payload: res.data
