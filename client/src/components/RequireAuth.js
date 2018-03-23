@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 export default ComposedComponent => {
   class RequireAuth extends Component {
     componentDidMount() {
-
+      
       if (!this.props.user.logged_in) {
         this.props.history.push('/signup');
       }

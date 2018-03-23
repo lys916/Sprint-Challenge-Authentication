@@ -54,6 +54,7 @@ export const signIn = (user, history) => {
 
 export const signOut = (history) => {
   localStorage.removeItem('token');
+  localStorage.removeItem('userName');
   history.push('/');
   return ({ type: LOGGED_OUT });
 }
