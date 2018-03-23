@@ -21,7 +21,8 @@ class SignUp extends React.Component {
   render() {
     return (
       <div className="signup">
-        <div className="title">Sign Up</div>
+        <div className="app-title">Dad's Jokes</div>
+        <div className="signup-title">Sign Up</div>
         <input type="text" name="username" value={this.state.username} 
         placeholder="Username" onChange={this.handleOnChange}/><br />
 

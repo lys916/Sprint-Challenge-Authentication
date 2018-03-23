@@ -15,7 +15,6 @@ class Jokes extends React.Component {
   }
   
   render() {
-    console.log('jokes from compo', this.props.jokes);
     return (
       <div className="jokes">
 
@@ -24,8 +23,8 @@ class Jokes extends React.Component {
         { this.props.jokes.map((joke, i)=> {
           return (
             <div key={i} className="joke">
-              <div className="name">{joke.setup}</div>
-              <div className="message">{joke.punchline}</div>
+              <div className="setup">{joke.setup}</div>
+              <div className="punchline">{joke.punchline}</div>
             </div>
           );
         })}

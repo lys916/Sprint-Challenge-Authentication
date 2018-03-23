@@ -22,7 +22,8 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login">
-        <div className="title">Dad Jokes</div>
+        <div className="app-title">Dad Jokes</div>
+        <div className="login-title">Sign In</div>
         <input name="username" value={this.state.username} 
         placeholder="Username" onChange={this.handleOnChange}/><br />
 
